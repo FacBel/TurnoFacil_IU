@@ -1,0 +1,360 @@
+/* ==========================================================================
+   Variables de Diseño y Tema Oscuro
+   ========================================================================== */
+:root {
+  /* Paleta de colores en modo oscuro */
+  --bg-body: #0a0714;
+  --card-bg: rgba(18, 14, 30, 0.75);
+  --card-border: rgba(168, 85, 247, 0.22);
+  --card-border-hover: rgba(192, 132, 252, 0.45);
+  
+  /* Gradientes violetas */
+  --gradient-primary: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #ec4899 100%);
+  --gradient-hover: linear-gradient(135deg, #9055ff 0%, #bd6bff 50%, #f45ca8 100%);
+  --gradient-glow: radial-gradient(circle, rgba(168, 85, 247, 0.25) 0%, rgba(124, 58, 237, 0) 70%);
+
+  /* Tipografía y Textos */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  
+  /* Etiquetas y estados */
+  --tag-bg: rgba(168, 85, 247, 0.12);
+  --tag-border: rgba(168, 85, 247, 0.28);
+  --tag-text: #e9d5ff;
+  --status-online: #10b981;
+
+  /* Sombras y transiciones */
+  --shadow-card: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 25px rgba(124, 58, 237, 0.15);
+  --shadow-hover: 0 30px 60px -15px rgba(0, 0, 0, 0.85), 0 0 45px rgba(168, 85, 247, 0.35);
+  --btn-glow: 0 8px 24px -4px rgba(168, 85, 247, 0.5);
+  --btn-glow-hover: 0 12px 32px -2px rgba(168, 85, 247, 0.75);
+  --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================================================
+   Reset y Estilos Base
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-body);
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(236, 72, 153, 0.12) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(168, 85, 247, 0.08) 0px, transparent 60%);
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Tarjeta de Presentación (Profile Card)
+   ========================================================================== */
+.profile-card {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--card-border);
+  border-radius: 28px;
+  padding: 2.25rem 2rem;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.profile-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--card-border-hover);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Resplandor violeta ambiental detrás de la tarjeta */
+.card-glow {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 250px;
+  background: var(--gradient-glow);
+  filter: blur(40px);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.8;
+  transition: var(--transition-smooth);
+}
+
+.profile-card:hover .card-glow {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.15);
+}
+
+/* ==========================================================================
+   Cabecera (Avatar + Nombre + Rol)
+   ========================================================================== */
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.avatar-wrapper {
+  position: relative;
+  margin-bottom: 1.25rem;
+  padding: 4px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: inline-flex;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+  transition: var(--transition-smooth);
+}
+
+.profile-card:hover .avatar-wrapper {
+  transform: scale(1.05);
+  box-shadow: 0 0 28px rgba(168, 85, 247, 0.6);
+}
+
+.avatar-img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  background-color: #1a162b;
+  border: 3px solid #100b21;
+}
+
+/* Indicador de estado online/activo */
+.status-badge {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--status-online);
+  border: 3px solid #120e1e;
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--status-online);
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+}
+
+.profile-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ==========================================================================
+   Cuerpo / Contenido
+   ========================================================================== */
+.card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.profile-bio {
+  font-size: 0.925rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+/* Lista de Habilidades / Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--tag-text);
+  background: var(--tag-bg);
+  border: 1px solid var(--tag-border);
+  padding: 0.35rem 0.85rem;
+  border-radius: 100px;
+  transition: var(--transition-smooth);
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: rgba(168, 85, 247, 0.25);
+  border-color: rgba(192, 132, 252, 0.6);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+/* Fila de Estadísticas */
+.stats-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  margin-top: 0.25rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stat-number {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Pie de Tarjeta y Botón con Gradiente y Efecto Hover
+   ========================================================================== */
+.card-footer {
+  width: 100%;
+  margin-top: 1.75rem;
+}
+
+.btn-gradient {
+  position: relative;
+  width: 100%;
+  padding: 0.9rem 1.75rem;
+  background: var(--gradient-primary);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  box-shadow: var(--btn-glow);
+  transition: var(--transition-smooth);
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Brillo sutil y dinámico en hover (Shine effect) */
+.btn-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.25), 
+    transparent
+  );
+  transition: 0.6s ease;
+  z-index: -1;
+}
+
+/* Icono del botón */
+.btn-icon {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Interacción Hover del Botón */
+.btn-gradient:hover {
+  background: var(--gradient-hover);
+  box-shadow: var(--btn-glow-hover);
+  transform: translateY(-3px);
+}
+
+.btn-gradient:hover::before {
+  left: 100%;
+}
+
+.btn-gradient:hover .btn-icon {
+  transform: translateX(4px);
+}
+
+/* Interacción Active / Focus */
+.btn-gradient:active {
+  transform: translateY(-1px) scale(0.98);
+  box-shadow: var(--btn-glow);
+}
+
+.btn-gradient:focus-visible {
+  outline: 2px solid #e9d5ff;
+  outline-offset: 3px;
+}
+
+/* ==========================================================================
+   Responsive / Adaptabilidad
+   ========================================================================== */
+@media (max-width: 420px) {
+  .profile-card {
+    padding: 1.75rem 1.25rem;
+    border-radius: 22px;
+  }
+
+  .avatar-img {
+    width: 84px;
+    height: 84px;
+  }
+
+  .profile-name {
+    font-size: 1.35rem;
+  }
+}
