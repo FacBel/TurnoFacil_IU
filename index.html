@@ -188,8 +188,8 @@
         <legend class="sr-only">Listado de servicios disponibles</legend>
 
         <!-- Servicio 1: Corte Clásico -->
-        <label class="service-card group relative block p-4 sm:p-5 rounded-2xl glass-panel cursor-pointer transition-all duration-200 ease-out hover:border-purple-400/50 hover:shadow-xl hover:shadow-purple-950/40 hover:-translate-y-0.5 active:scale-[0.99] focus-within:ring-2 focus-within:ring-purple-400" data-id="1" data-category="corte" data-name="Corte Clásico & Fade" data-price="4500" data-duration="35">
-          <input type="radio" name="service" value="1" class="sr-only peer" checked>
+        <label class="service-card group relative block p-4 sm:p-5 rounded-2xl cursor-pointer transition-all duration-200 ease-out hover:border-purple-400/50 hover:shadow-xl hover:shadow-purple-950/40 hover:-translate-y-0.5 active:scale-[0.99] focus-within:ring-2 focus-within:ring-purple-400 ring-2 ring-purple-400 bg-purple-950/40 border-purple-400" data-id="1" data-category="corte" data-name="Corte Clásico & Fade" data-price="4500" data-duration="35">
+          <input type="radio" name="service" value="1" class="sr-only" checked>
           <div class="flex items-start justify-between gap-3">
             <div class="flex-1">
               <span class="inline-block px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-purple-950/80 text-purple-300 border border-purple-800/40 mb-2">Corte</span>
@@ -204,15 +204,15 @@
               </div>
             </div>
             <!-- Indicador Radio custom -->
-            <div class="w-6 h-6 rounded-full border-2 border-slate-600 peer-checked:border-purple-500 peer-checked:bg-purple-600 flex items-center justify-center transition-all flex-shrink-0">
-              <svg class="w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+            <div class="radio-circle w-6 h-6 rounded-full border-2 border-purple-400 bg-purple-600 shadow-md shadow-purple-900/60 flex items-center justify-center transition-all flex-shrink-0">
+              <svg class="radio-check w-3.5 h-3.5 text-white transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
             </div>
           </div>
         </label>
 
         <!-- Servicio 2: Perfilado de Barba -->
         <label class="service-card group relative block p-4 sm:p-5 rounded-2xl glass-panel cursor-pointer transition-all duration-200 ease-out hover:border-purple-400/50 hover:shadow-xl hover:shadow-purple-950/40 hover:-translate-y-0.5 active:scale-[0.99] focus-within:ring-2 focus-within:ring-purple-400" data-id="2" data-category="barba" data-name="Perfilado de Barba & Toalla" data-price="3200" data-duration="25">
-          <input type="radio" name="service" value="2" class="sr-only peer">
+          <input type="radio" name="service" value="2" class="sr-only">
           <div class="flex items-start justify-between gap-3">
             <div class="flex-1">
               <span class="inline-block px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-pink-950/80 text-pink-300 border border-pink-800/40 mb-2">Barba</span>
@@ -226,16 +226,16 @@
                 <span class="text-base font-extrabold text-white">$ 3.200</span>
               </div>
             </div>
-            <div class="w-6 h-6 rounded-full border-2 border-slate-600 peer-checked:border-purple-500 peer-checked:bg-purple-600 flex items-center justify-center transition-all flex-shrink-0">
-              <svg class="w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+            <div class="radio-circle w-6 h-6 rounded-full border-2 border-slate-600 flex items-center justify-center transition-all flex-shrink-0">
+              <svg class="radio-check w-3.5 h-3.5 text-white opacity-0 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
             </div>
           </div>
         </label>
 
         <!-- Servicio 3: Combo VIP (Destacado) -->
-        <label class="service-card group relative block p-4 sm:p-5 rounded-2xl glass-panel cursor-pointer transition-all duration-200 ease-out hover:border-purple-400/50 hover:shadow-xl hover:shadow-purple-950/40 hover:-translate-y-0.5 active:scale-[0.99] focus-within:ring-2 focus-within:ring-purple-400 ring-1 ring-purple-500/30" data-id="3" data-category="combo" data-name="Combo VIP: Corte + Barba" data-price="7000" data-duration="55">
+        <label class="service-card group relative block p-4 sm:p-5 rounded-2xl glass-panel cursor-pointer transition-all duration-200 ease-out hover:border-purple-400/50 hover:shadow-xl hover:shadow-purple-950/40 hover:-translate-y-0.5 active:scale-[0.99] focus-within:ring-2 focus-within:ring-purple-400" data-id="3" data-category="combo" data-name="Combo VIP: Corte + Barba" data-price="7000" data-duration="55">
           <div class="absolute -top-2.5 right-4 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-gradient-to-r from-purple-600 to-pink-500 text-white shadow-md">RECOMENDADO</div>
-          <input type="radio" name="service" value="3" class="sr-only peer">
+          <input type="radio" name="service" value="3" class="sr-only">
           <div class="flex items-start justify-between gap-3">
             <div class="flex-1">
               <span class="inline-block px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-purple-900/60 text-purple-200 border border-purple-700/50 mb-2">Combo Total</span>
@@ -249,15 +249,15 @@
                 <span class="text-base font-extrabold text-white">$ 7.000</span>
               </div>
             </div>
-            <div class="w-6 h-6 rounded-full border-2 border-slate-600 peer-checked:border-purple-500 peer-checked:bg-purple-600 flex items-center justify-center transition-all flex-shrink-0">
-              <svg class="w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+            <div class="radio-circle w-6 h-6 rounded-full border-2 border-slate-600 flex items-center justify-center transition-all flex-shrink-0">
+              <svg class="radio-check w-3.5 h-3.5 text-white opacity-0 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
             </div>
           </div>
         </label>
 
         <!-- Servicio 4: Tratamiento Capilar -->
         <label class="service-card group relative block p-4 sm:p-5 rounded-2xl glass-panel cursor-pointer transition-all duration-200 ease-out hover:border-purple-400/50 hover:shadow-xl hover:shadow-purple-950/40 hover:-translate-y-0.5 active:scale-[0.99] focus-within:ring-2 focus-within:ring-purple-400" data-id="4" data-category="corte" data-name="Tratamiento & Nutrición" data-price="5500" data-duration="45">
-          <input type="radio" name="service" value="4" class="sr-only peer">
+          <input type="radio" name="service" value="4" class="sr-only">
           <div class="flex items-start justify-between gap-3">
             <div class="flex-1">
               <span class="inline-block px-2.5 py-0.5 rounded-md text-[11px] font-semibold bg-purple-950/80 text-purple-300 border border-purple-800/40 mb-2">Tratamiento</span>
@@ -271,8 +271,8 @@
                 <span class="text-base font-extrabold text-white">$ 5.500</span>
               </div>
             </div>
-            <div class="w-6 h-6 rounded-full border-2 border-slate-600 peer-checked:border-purple-500 peer-checked:bg-purple-600 flex items-center justify-center transition-all flex-shrink-0">
-              <svg class="w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+            <div class="radio-circle w-6 h-6 rounded-full border-2 border-slate-600 flex items-center justify-center transition-all flex-shrink-0">
+              <svg class="radio-check w-3.5 h-3.5 text-white opacity-0 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
             </div>
           </div>
         </label>
@@ -292,8 +292,8 @@
         <legend class="sr-only">Listado de profesionales</legend>
 
         <!-- Opción 0: Cualquiera disponible -->
-        <label class="staff-card group relative block p-4 sm:p-5 rounded-2xl glass-panel cursor-pointer transition-all duration-200 ease-out hover:border-purple-400/50 hover:shadow-xl hover:shadow-purple-950/40 hover:-translate-y-0.5 active:scale-[0.99] focus-within:ring-2 focus-within:ring-purple-400" data-id="any" data-name="Cualquiera Disponible" data-role="Mayor disponibilidad">
-          <input type="radio" name="staff" value="any" class="sr-only peer" checked>
+        <label class="staff-card group relative block p-4 sm:p-5 rounded-2xl cursor-pointer transition-all duration-200 ease-out hover:border-purple-400/50 hover:shadow-xl hover:shadow-purple-950/40 hover:-translate-y-0.5 active:scale-[0.99] focus-within:ring-2 focus-within:ring-purple-400 ring-2 ring-purple-400 bg-purple-950/40 border-purple-400" data-id="any" data-name="Cualquiera Disponible" data-role="Mayor disponibilidad">
+          <input type="radio" name="staff" value="any" class="sr-only" checked>
           <div class="flex items-center gap-4">
             <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-600 to-pink-500 flex items-center justify-center text-white shadow-md flex-shrink-0">
               <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
@@ -303,15 +303,15 @@
               <p class="text-xs text-purple-300 font-medium mt-0.5">Máxima rapidez de horarios</p>
               <span class="inline-block mt-2 text-[11px] text-slate-400 font-semibold">Te asignamos el primer slot libre</span>
             </div>
-            <div class="w-6 h-6 rounded-full border-2 border-slate-600 peer-checked:border-purple-500 peer-checked:bg-purple-600 flex items-center justify-center transition-all flex-shrink-0">
-              <svg class="w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+            <div class="radio-circle w-6 h-6 rounded-full border-2 border-purple-400 bg-purple-600 shadow-md shadow-purple-900/60 flex items-center justify-center transition-all flex-shrink-0">
+              <svg class="radio-check w-3.5 h-3.5 text-white transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
             </div>
           </div>
         </label>
 
         <!-- Profesional 1: Lucas -->
         <label class="staff-card group relative block p-4 sm:p-5 rounded-2xl glass-panel cursor-pointer transition-all duration-200 ease-out hover:border-purple-400/50 hover:shadow-xl hover:shadow-purple-950/40 hover:-translate-y-0.5 active:scale-[0.99] focus-within:ring-2 focus-within:ring-purple-400" data-id="lucas" data-name="Lucas 'El Maestro'" data-role="Navaja & Clásicos">
-          <input type="radio" name="staff" value="lucas" class="sr-only peer">
+          <input type="radio" name="staff" value="lucas" class="sr-only">
           <div class="flex items-center gap-4">
             <div class="relative flex-shrink-0">
               <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" alt="Foto de Lucas" class="w-14 h-14 rounded-2xl object-cover border-2 border-purple-500/40">
@@ -325,15 +325,15 @@
                 <span class="text-slate-400 text-[11px] font-normal">(128 reseñas)</span>
               </div>
             </div>
-            <div class="w-6 h-6 rounded-full border-2 border-slate-600 peer-checked:border-purple-500 peer-checked:bg-purple-600 flex items-center justify-center transition-all flex-shrink-0">
-              <svg class="w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+            <div class="radio-circle w-6 h-6 rounded-full border-2 border-slate-600 flex items-center justify-center transition-all flex-shrink-0">
+              <svg class="radio-check w-3.5 h-3.5 text-white opacity-0 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
             </div>
           </div>
         </label>
 
         <!-- Profesional 2: Mateo -->
         <label class="staff-card group relative block p-4 sm:p-5 rounded-2xl glass-panel cursor-pointer transition-all duration-200 ease-out hover:border-purple-400/50 hover:shadow-xl hover:shadow-purple-950/40 hover:-translate-y-0.5 active:scale-[0.99] focus-within:ring-2 focus-within:ring-purple-400" data-id="mateo" data-name="Mateo Silva" data-role="Fades & Diseños">
-          <input type="radio" name="staff" value="mateo" class="sr-only peer">
+          <input type="radio" name="staff" value="mateo" class="sr-only">
           <div class="flex items-center gap-4">
             <div class="relative flex-shrink-0">
               <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop" alt="Foto de Mateo" class="w-14 h-14 rounded-2xl object-cover border-2 border-purple-500/40">
@@ -347,15 +347,15 @@
                 <span class="text-slate-400 text-[11px] font-normal">(95 reseñas)</span>
               </div>
             </div>
-            <div class="w-6 h-6 rounded-full border-2 border-slate-600 peer-checked:border-purple-500 peer-checked:bg-purple-600 flex items-center justify-center transition-all flex-shrink-0">
-              <svg class="w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+            <div class="radio-circle w-6 h-6 rounded-full border-2 border-slate-600 flex items-center justify-center transition-all flex-shrink-0">
+              <svg class="radio-check w-3.5 h-3.5 text-white opacity-0 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
             </div>
           </div>
         </label>
 
         <!-- Profesional 3: Sofía -->
         <label class="staff-card group relative block p-4 sm:p-5 rounded-2xl glass-panel cursor-pointer transition-all duration-200 ease-out hover:border-purple-400/50 hover:shadow-xl hover:shadow-purple-950/40 hover:-translate-y-0.5 active:scale-[0.99] focus-within:ring-2 focus-within:ring-purple-400" data-id="sofia" data-name="Sofía Valenzuela" data-role="Tijera & Estilo">
-          <input type="radio" name="staff" value="sofia" class="sr-only peer">
+          <input type="radio" name="staff" value="sofia" class="sr-only">
           <div class="flex items-center gap-4">
             <div class="relative flex-shrink-0">
               <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Foto de Sofía" class="w-14 h-14 rounded-2xl object-cover border-2 border-purple-500/40">
@@ -369,8 +369,8 @@
                 <span class="text-slate-400 text-[11px] font-normal">(142 reseñas)</span>
               </div>
             </div>
-            <div class="w-6 h-6 rounded-full border-2 border-slate-600 peer-checked:border-purple-500 peer-checked:bg-purple-600 flex items-center justify-center transition-all flex-shrink-0">
-              <svg class="w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+            <div class="radio-circle w-6 h-6 rounded-full border-2 border-slate-600 flex items-center justify-center transition-all flex-shrink-0">
+              <svg class="radio-check w-3.5 h-3.5 text-white opacity-0 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
             </div>
           </div>
         </label>
@@ -394,7 +394,7 @@
         </div>
       </div>
 
-      <!-- Grilla de Horarios por Turnos -->
+      <!-- Grilla de Horarios por Turnos (Generada dinámicamente) -->
       <div class="space-y-5">
         <!-- Mañana -->
         <div>
@@ -403,11 +403,7 @@
             Turno Mañana (09:00 - 12:30)
           </span>
           <div class="grid grid-cols-3 sm:grid-cols-5 gap-2.5" id="morning-slots">
-            <button type="button" class="slot-btn py-2.5 px-3 rounded-xl glass-panel text-sm font-semibold text-slate-200 transition-all hover:border-purple-400 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400" data-time="09:00">09:00</button>
-            <button type="button" class="slot-btn py-2.5 px-3 rounded-xl glass-panel text-sm font-semibold text-slate-200 transition-all hover:border-purple-400 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400" data-time="09:45">09:45</button>
-            <button type="button" class="slot-btn py-2.5 px-3 rounded-xl bg-slate-900/40 border border-slate-800 text-slate-600 line-through cursor-not-allowed opacity-40" disabled aria-disabled="true" data-time="10:30">10:30</button>
-            <button type="button" class="slot-btn py-2.5 px-3 rounded-xl glass-panel text-sm font-semibold text-slate-200 transition-all hover:border-purple-400 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400" data-time="11:15">11:15</button>
-            <button type="button" class="slot-btn py-2.5 px-3 rounded-xl glass-panel text-sm font-semibold text-slate-200 transition-all hover:border-purple-400 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400" data-time="12:00">12:00</button>
+            <!-- Renderizado dinámico vía JS -->
           </div>
         </div>
 
@@ -418,11 +414,7 @@
             Turno Tarde (14:00 - 18:30)
           </span>
           <div class="grid grid-cols-3 sm:grid-cols-5 gap-2.5" id="afternoon-slots">
-            <button type="button" class="slot-btn py-2.5 px-3 rounded-xl glass-panel text-sm font-semibold text-slate-200 transition-all hover:border-purple-400 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400" data-time="14:00">14:00</button>
-            <button type="button" class="slot-btn py-2.5 px-3 rounded-xl glass-panel text-sm font-semibold text-slate-200 transition-all hover:border-purple-400 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400" data-time="14:45">14:45</button>
-            <button type="button" class="slot-btn py-2.5 px-3 rounded-xl glass-panel text-sm font-semibold text-slate-200 transition-all hover:border-purple-400 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400" data-time="15:30">15:30</button>
-            <button type="button" class="slot-btn py-2.5 px-3 rounded-xl bg-slate-900/40 border border-slate-800 text-slate-600 line-through cursor-not-allowed opacity-40" disabled aria-disabled="true" data-time="16:15">16:15</button>
-            <button type="button" class="slot-btn py-2.5 px-3 rounded-xl glass-panel text-sm font-semibold text-slate-200 transition-all hover:border-purple-400 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400" data-time="17:00">17:00</button>
+            <!-- Renderizado dinámico vía JS -->
           </div>
         </div>
 
@@ -433,9 +425,7 @@
             Turno Noche (19:00 - 21:00)
           </span>
           <div class="grid grid-cols-3 sm:grid-cols-5 gap-2.5" id="night-slots">
-            <button type="button" class="slot-btn py-2.5 px-3 rounded-xl glass-panel text-sm font-semibold text-slate-200 transition-all hover:border-purple-400 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400" data-time="19:00">19:00</button>
-            <button type="button" class="slot-btn py-2.5 px-3 rounded-xl glass-panel text-sm font-semibold text-slate-200 transition-all hover:border-purple-400 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400" data-time="19:45">19:45</button>
-            <button type="button" class="slot-btn py-2.5 px-3 rounded-xl glass-panel text-sm font-semibold text-slate-200 transition-all hover:border-purple-400 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400" data-time="20:30">20:30</button>
+            <!-- Renderizado dinámico vía JS -->
           </div>
         </div>
       </div>
@@ -490,7 +480,10 @@
                 type="tel" 
                 id="client-phone" 
                 name="phone" 
-                placeholder="Ej. +54 9 11 2345-6789" 
+                placeholder="Ej. 1123456789" 
+                inputmode="numeric"
+                pattern="[0-9]*"
+                maxlength="15"
                 required 
                 class="w-full pl-10 pr-4 py-3 rounded-xl glass-panel text-white placeholder:text-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-purple-400 border border-slate-700 transition-all"
                 aria-describedby="phone-error"
@@ -498,7 +491,7 @@
             </div>
             <p id="phone-error" class="hidden text-xs text-pink-400 mt-1.5 flex items-center gap-1 font-medium" role="alert">
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
-              Por favor ingresa un número de teléfono válido.
+              Por favor ingresa un número de teléfono válido (solo números, mín. 8 dígitos).
             </p>
           </div>
 
@@ -727,7 +720,124 @@
       const nameError = document.getElementById('name-error');
       const phoneError = document.getElementById('phone-error');
 
-      // 3. Inicializar Días en el Calendario (Próximos 7 días)
+      // 3. Definición de Horarios y Disponibilidad por Día
+      const timeSlotDefinitions = {
+        morning: ['09:00', '09:45', '10:30', '11:15', '12:00'],
+        afternoon: ['14:00', '14:45', '15:30', '16:15', '17:00', '17:45'],
+        night: ['19:00', '19:45', '20:30']
+      };
+
+      // Matriz de horarios ocupados/tachados según el día seleccionado (0 = Hoy, 1 = Mañana, etc.)
+      const bookedSlotsByDay = [
+        // Día 0 (Hoy): Turnos ocupados intercalados
+        ['10:30', '16:15', '19:45'],
+        // Día 1 (Mañana): Horarios ocupados distintos
+        ['09:45', '12:00', '14:00', '17:00', '20:30'],
+        // Día 2: Tarde concurrida
+        ['09:00', '11:15', '14:45', '15:30', '17:45'],
+        // Día 3: Mañana concurrida
+        ['10:30', '12:00', '16:15', '19:00'],
+        // Día 4: Solo algunos ocupados en la tarde
+        ['14:00', '15:30', '17:00', '19:45'],
+        // Día 5: Fin de semana concurrido
+        ['09:00', '09:45', '10:30', '14:45', '17:00', '20:30'],
+        // Día 6: Horarios libres en la mañana y ocupados en la tarde/noche
+        ['11:15', '14:00', '16:15', '19:00', '19:45']
+      ];
+
+      let selectedDayIndex = 0;
+
+      // Renderizador dinámico de slots horarios
+      function renderTimeSlots(dayIndex) {
+        selectedDayIndex = dayIndex;
+        const bookedList = bookedSlotsByDay[dayIndex % bookedSlotsByDay.length] || [];
+        
+        const morningContainer = document.getElementById('morning-slots');
+        const afternoonContainer = document.getElementById('afternoon-slots');
+        const nightContainer = document.getElementById('night-slots');
+
+        morningContainer.innerHTML = '';
+        afternoonContainer.innerHTML = '';
+        nightContainer.innerHTML = '';
+
+        // Determinar si la hora seleccionada actualmente sigue disponible en este nuevo día
+        let isCurrentTimeStillAvailable = false;
+        let firstAvailableTime = null;
+
+        const allSlots = [
+          ...timeSlotDefinitions.morning,
+          ...timeSlotDefinitions.afternoon,
+          ...timeSlotDefinitions.night
+        ];
+
+        allSlots.forEach(time => {
+          if (!bookedList.includes(time)) {
+            if (!firstAvailableTime) firstAvailableTime = time;
+            if (bookingState.dateTime.time === time) isCurrentTimeStillAvailable = true;
+          }
+        });
+
+        // Si la hora previa quedó ocupada al cambiar de día, seleccionamos automáticamente el primer horario libre
+        if (!isCurrentTimeStillAvailable && firstAvailableTime) {
+          bookingState.dateTime.time = firstAvailableTime;
+        }
+
+        // Fábrica de botones de slot accesible con 5 estados
+        function createSlotButton(time) {
+          const isBooked = bookedList.includes(time);
+          const isSelected = !isBooked && bookingState.dateTime.time === time;
+
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.dataset.time = time;
+
+          if (isBooked) {
+            btn.className = 'slot-btn py-2.5 px-3 rounded-xl bg-slate-900/40 border border-slate-800/80 text-slate-600 line-through cursor-not-allowed opacity-40 select-none';
+            btn.disabled = true;
+            btn.setAttribute('aria-disabled', 'true');
+            btn.setAttribute('title', 'Horario ya reservado');
+            btn.textContent = time;
+          } else {
+            btn.className = `slot-btn py-2.5 px-3 rounded-xl text-sm font-semibold transition-all active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400 ${
+              isSelected
+                ? 'bg-gradient-to-r from-purple-600 to-pink-500 border border-purple-400 text-white font-bold shadow-md shadow-purple-900/40 scale-[1.02]'
+                : 'glass-panel text-slate-200 hover:border-purple-400 hover:text-white'
+            }`;
+            btn.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+            btn.textContent = time;
+
+            btn.addEventListener('click', () => {
+              document.querySelectorAll('.slot-btn:not([disabled])').forEach(b => {
+                b.className = 'slot-btn py-2.5 px-3 rounded-xl glass-panel text-sm font-semibold text-slate-200 transition-all hover:border-purple-400 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400';
+                b.setAttribute('aria-pressed', 'false');
+              });
+              btn.className = 'slot-btn py-2.5 px-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-500 border border-purple-400 text-white font-bold shadow-md shadow-purple-900/40 scale-[1.02] active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400';
+              btn.setAttribute('aria-pressed', 'true');
+
+              bookingState.dateTime.time = time;
+              updateStickySummary();
+            });
+          }
+
+          return btn;
+        }
+
+        timeSlotDefinitions.morning.forEach(time => {
+          morningContainer.appendChild(createSlotButton(time));
+        });
+
+        timeSlotDefinitions.afternoon.forEach(time => {
+          afternoonContainer.appendChild(createSlotButton(time));
+        });
+
+        timeSlotDefinitions.night.forEach(time => {
+          nightContainer.appendChild(createSlotButton(time));
+        });
+
+        updateStickySummary();
+      }
+
+      // 4. Inicializar Días en el Calendario (Próximos 7 días)
       function initDaysCarousel() {
         const days = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
         const months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
@@ -760,6 +870,7 @@
           }`;
           dayBtn.dataset.date = isoDate;
           dayBtn.dataset.formatted = fullFormatted;
+          dayBtn.dataset.dayIndex = i;
           dayBtn.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
           dayBtn.innerHTML = `
             <span class="text-[11px] opacity-80 uppercase">${dayName}</span>
@@ -777,25 +888,55 @@
             
             bookingState.dateTime.dateString = dayBtn.dataset.date;
             bookingState.dateTime.formattedDate = dayBtn.dataset.formatted;
-            updateStickySummary();
+            
+            // Renderizar los horarios propios de este día
+            renderTimeSlots(i);
           });
 
           daysCarousel.appendChild(dayBtn);
         }
+
+        // Renderizar horarios del día inicial (Hoy)
+        renderTimeSlots(0);
       }
 
-      // 4. Gestión de Selección de Servicios
-      document.querySelectorAll('.service-card').forEach(card => {
-        card.addEventListener('click', () => {
-          bookingState.service.id = card.dataset.id;
-          bookingState.service.name = card.dataset.name;
-          bookingState.service.price = parseInt(card.dataset.price, 10);
-          bookingState.service.duration = parseInt(card.dataset.duration, 10);
-          updateStickySummary();
+      // 5. Gestión de Selección de Servicios con actualización visual de Radio Circle
+      function selectService(card) {
+        document.querySelectorAll('.service-card').forEach(c => {
+          c.classList.remove('ring-2', 'ring-purple-400', 'bg-purple-950/40', 'border-purple-400');
+          c.classList.add('glass-panel');
+          const radio = c.querySelector('input[type="radio"]');
+          if (radio) radio.checked = false;
+          const circle = c.querySelector('.radio-circle');
+          if (circle) {
+            circle.className = 'radio-circle w-6 h-6 rounded-full border-2 border-slate-600 flex items-center justify-center transition-all flex-shrink-0';
+          }
+          const check = c.querySelector('.radio-check');
+          if (check) check.classList.add('opacity-0');
         });
+
+        card.classList.remove('glass-panel');
+        card.classList.add('ring-2', 'ring-purple-400', 'bg-purple-950/40', 'border-purple-400');
+        const radio = card.querySelector('input[type="radio"]');
+        if (radio) radio.checked = true;
+        const circle = card.querySelector('.radio-circle');
+        if (circle) {
+          circle.className = 'radio-circle w-6 h-6 rounded-full border-2 border-purple-400 bg-purple-600 shadow-md shadow-purple-900/60 flex items-center justify-center transition-all flex-shrink-0';
+        }
+        const check = card.querySelector('.radio-check');
+        if (check) check.classList.remove('opacity-0');
+
+        bookingState.service.id = card.dataset.id;
+        bookingState.service.name = card.dataset.name;
+        bookingState.service.price = parseInt(card.dataset.price, 10);
+        bookingState.service.duration = parseInt(card.dataset.duration, 10);
+        updateStickySummary();
+      }
+
+      document.querySelectorAll('.service-card').forEach(card => {
+        card.addEventListener('click', () => selectService(card));
       });
 
-      // Filtro de categorías de servicio
       document.querySelectorAll('.category-filter-btn').forEach(btn => {
         btn.addEventListener('click', () => {
           document.querySelectorAll('.category-filter-btn').forEach(b => {
@@ -818,29 +959,45 @@
         });
       });
 
-      // 5. Gestión de Selección de Especialistas
-      document.querySelectorAll('.staff-card').forEach(card => {
-        card.addEventListener('click', () => {
-          bookingState.staff.id = card.dataset.id;
-          bookingState.staff.name = card.dataset.name;
-          bookingState.staff.role = card.dataset.role;
-          updateStickySummary();
+      // 6. Gestión de Selección de Especialistas con actualización visual de Radio Circle
+      function selectStaff(card) {
+        document.querySelectorAll('.staff-card').forEach(c => {
+          c.classList.remove('ring-2', 'ring-purple-400', 'bg-purple-950/40', 'border-purple-400');
+          c.classList.add('glass-panel');
+          const radio = c.querySelector('input[type="radio"]');
+          if (radio) radio.checked = false;
+          const circle = c.querySelector('.radio-circle');
+          if (circle) {
+            circle.className = 'radio-circle w-6 h-6 rounded-full border-2 border-slate-600 flex items-center justify-center transition-all flex-shrink-0';
+          }
+          const check = c.querySelector('.radio-check');
+          if (check) check.classList.add('opacity-0');
         });
+
+        card.classList.remove('glass-panel');
+        card.classList.add('ring-2', 'ring-purple-400', 'bg-purple-950/40', 'border-purple-400');
+        const radio = card.querySelector('input[type="radio"]');
+        if (radio) radio.checked = true;
+        const circle = card.querySelector('.radio-circle');
+        if (circle) {
+          circle.className = 'radio-circle w-6 h-6 rounded-full border-2 border-purple-400 bg-purple-600 shadow-md shadow-purple-900/60 flex items-center justify-center transition-all flex-shrink-0';
+        }
+        const check = card.querySelector('.radio-check');
+        if (check) check.classList.remove('opacity-0');
+
+        bookingState.staff.id = card.dataset.id;
+        bookingState.staff.name = card.dataset.name;
+        bookingState.staff.role = card.dataset.role;
+        updateStickySummary();
+      }
+
+      document.querySelectorAll('.staff-card').forEach(card => {
+        card.addEventListener('click', () => selectStaff(card));
       });
 
-      // 6. Gestión de Slots Horarios
-      document.querySelectorAll('.slot-btn:not([disabled])').forEach(btn => {
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('.slot-btn:not([disabled])').forEach(b => {
-            b.className = 'slot-btn py-2.5 px-3 rounded-xl glass-panel text-sm font-semibold text-slate-200 transition-all hover:border-purple-400 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400';
-            b.setAttribute('aria-pressed', 'false');
-          });
-          btn.className = 'slot-btn py-2.5 px-3 rounded-xl bg-gradient-to-r from-purple-600 to-pink-500 border border-purple-400 text-white font-bold shadow-md shadow-purple-900/40 active:scale-95 focus-visible:ring-2 focus-visible:ring-purple-400';
-          btn.setAttribute('aria-pressed', 'true');
-
-          bookingState.dateTime.time = btn.dataset.time;
-          updateStickySummary();
-        });
+      // Restringir el input de teléfono de WhatsApp estrictamente a solo números
+      clientPhoneInput.addEventListener('input', (e) => {
+        e.target.value = e.target.value.replace(/\D/g, '');
       });
 
       // 7. Actualizar Resumen en Vivo (Live Sticky Bar & Summary Card)
@@ -879,7 +1036,7 @@
           clientNameInput.classList.remove('border-pink-500', 'ring-1', 'ring-pink-500');
         }
 
-        if (phoneVal.length < 6) {
+        if (phoneVal.length < 8 || !/^\d+$/.test(phoneVal)) {
           phoneError.classList.remove('hidden');
           clientPhoneInput.classList.add('border-pink-500', 'ring-1', 'ring-pink-500');
           isValid = false;
@@ -992,7 +1149,18 @@
       // Botón Reiniciar
       document.getElementById('btn-reset').addEventListener('click', () => {
         contactForm.reset();
+        clientNameInput.classList.remove('border-pink-500', 'ring-1', 'ring-pink-500');
+        clientPhoneInput.classList.remove('border-pink-500', 'ring-1', 'ring-pink-500');
+        nameError.classList.add('hidden');
+        phoneError.classList.add('hidden');
         stickyBar.classList.remove('hidden');
+        
+        const firstService = document.querySelector('.service-card[data-id="1"]');
+        if (firstService) selectService(firstService);
+        const firstStaff = document.querySelector('.staff-card[data-id="any"]');
+        if (firstStaff) selectStaff(firstStaff);
+        
+        initDaysCarousel();
         goToStep(1);
       });
 

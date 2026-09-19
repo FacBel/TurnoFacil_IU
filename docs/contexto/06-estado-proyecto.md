@@ -16,7 +16,7 @@
 - [x] **Estructura Base del Stepper (5 Pasos)**:
   - [x] Paso 1: Selección de Servicios con filtros de categoría (*Cortes, Barba, Combos*).
   - [x] Paso 2: Selección de Especialista con foto, badge y rating.
-  - [x] Paso 3: Calendario dinámico de 7 días y selector de franjas horarias (*Mañana, Tarde, Noche*).
+  - [x] Paso 3: Calendario dinámico de 7 días y selector de franjas horarias (*Mañana, Tarde, Noche*) con matriz de disponibilidad variable por día (horarios ocupados realistas).
   - [x] Paso 4: Formulario accesible de contacto (Nombre, Teléfono, Notas) con validación en vivo.
   - [x] Paso 5: Pantalla de confirmación con ticket digital, botones para Google Calendar y WhatsApp.
 - [x] **Barra Inferior de Resumen en Vivo (Live Sticky Summary)**: Actualización en tiempo real del precio, servicio, profesional y navegación fluida entre pasos.
